@@ -48,7 +48,7 @@ links.forEach(
 
 // CTA Section
 const title = document.querySelector(".cta-text h1");
-title.innerHTML = 'DOM' + '<br>' + 'Is' + '<br>' + 'Awesome!';
+title.innerHTML = siteContent["cta"]["h1"].replace(/ /g, '<br>');
 
 const mainImg = document.querySelector("#cta-img");
 mainImg.setAttribute("src", siteContent["cta"]["img-src"]);
